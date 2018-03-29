@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [appium实战-Android篇]" parallel="tests">
+  <parameter name="appPackage" value="com.microsoft.bing"/>
+  <parameter name="androidAppPath" value="res/app/android/bing.apk"/>
+  <parameter name="elementTimeOut" value="15"/>
+  <parameter name="deviceName" value="63a7b810"/>
+  <parameter name="iosAppPath" value="res/app/ios/xxx.app"/>
+  <parameter name="appActivity" value="com.microsoft.clients.bing.app.MainActivity"/>
+  <parameter name="serverURL" value="http://127.0.0.1:4723/wd/hub"/>
+  <parameter name="platformVersion" value="6.0.1"/>
+  <parameter name="automationName" value="Appium"/>
+  <parameter name="appFilePath" value="res/properties/app.properties"/>
+  <parameter name="sleepTime" value="1"/>
+  <parameter name="unicodeKeyboard" value="true"/>
+  <parameter name="sessionOverride" value="true"/>
+  <parameter name="platformName" value="Android"/>
+  <parameter name="udid" value=""/>
+  <parameter name="resetKeyboard" value="true"/>
+  <listeners>
+    <listener class-name="com.xiaolanyun.appium.DataTest.plugins.excelReporter.TestResultListener"/>
+    <listener class-name="com.xiaolanyun.appium.DataTest.plugins.excelReporter.ExcelReporter"/>
+  </listeners>
+  <test name="搜索">
+    <classes>
+      <class name="com.xiaolanyun.appium.DataTest.testCase.search.SearchPage_001_SearchDemo_Test"/>
+    </classes>
+  </test> <!-- 搜索 -->
+  <test name="搜索(failed)" parallel="tests">
+    <classes>
+      <class name="com.xiaolanyun.appium.DataTest.testCase.search.SearchPage_001_SearchDemo_Test">
+        <methods>
+          <include name="initTest"/>
+          <include name="searchDemo" invocation-numbers="0"/>
+          <include name="clenTest"/>
+        </methods>
+      </class> <!-- com.xiaolanyun.appium.DataTest.testCase.search.SearchPage_001_SearchDemo_Test -->
+    </classes>
+  </test> <!-- 搜索(failed) -->
+</suite> <!-- Failed suite [appium实战-Android篇] -->

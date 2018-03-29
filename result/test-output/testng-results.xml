@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="appium实战-Android篇" duration-ms="81429" started-at="2018-03-25T02:32:26Z" finished-at="2018-03-25T02:33:47Z">
+    <groups>
+    </groups>
+    <test name="搜索" duration-ms="81429" started-at="2018-03-25T02:32:26Z" finished-at="2018-03-25T02:33:47Z">
+      <class name="com.xiaolanyun.appium.DataTest.testCase.search.SearchPage_001_SearchDemo_Test">
+        <test-method status="PASS" signature="initTest(org.testng.ITestContext)[pri:0, instance:com.xiaolanyun.appium.DataTest.testCase.search.SearchPage_001_SearchDemo_Test@cb644e]" name="initTest" is-config="true" duration-ms="56066" started-at="2018-03-25T10:32:26Z" finished-at="2018-03-25T10:33:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@887af79]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTest -->
+        <test-method status="FAIL" signature="searchDemo(java.util.Map)[pri:0, instance:com.xiaolanyun.appium.DataTest.testCase.search.SearchPage_001_SearchDemo_Test@cb644e]" name="searchDemo" duration-ms="18274" started-at="2018-03-25T10:33:22Z" data-provider="testData" finished-at="2018-03-25T10:33:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{KEYWORD=Java}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.25 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DESKTOP-H6R9LGB', ip: '66.183.249.128', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=F:\javaworkspace\DataTest\res\app\android\bing.apk, appPackage=com.microsoft.bing, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=63a7b810, platform=LINUX, appActivity=com.microsoft.clients.bing.app.MainActivity, desired={app=F:\javaworkspace\DataTest\res\app\android\bing.apk, appPackage=com.microsoft.bing, appActivity=com.microsoft.clients.bing.app.MainActivity, platformVersion=6.0.1, automationName=Appium, sessionOverride=true, unicodeKeyboard=true, platformName=Android, deviceName=63a7b810, resetKeyboard=true}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, browserName=Android, takesScreenshot=true, javascriptEnabled=true, sessionOverride=true, unicodeKeyboard=true, platformName=Android, resetKeyboard=true}]
+Session ID: 2c5a13ca-dc6b-43de-82c9-2eb1b718ee08
+*** Element info: {Using=id, value=android:id/button2}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.25 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'DESKTOP-H6R9LGB', ip: '66.183.249.128', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=F:\javaworkspace\DataTest\res\app\android\bing.apk, appPackage=com.microsoft.bing, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=63a7b810, platform=LINUX, appActivity=com.microsoft.clients.bing.app.MainActivity, desired={app=F:\javaworkspace\DataTest\res\app\android\bing.apk, appPackage=com.microsoft.bing, appActivity=com.microsoft.clients.bing.app.MainActivity, platformVersion=6.0.1, automationName=Appium, sessionOverride=true, unicodeKeyboard=true, platformName=Android, deviceName=63a7b810, resetKeyboard=true}, platformVersion=6.0.1, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, browserName=Android, takesScreenshot=true, javascriptEnabled=true, sessionOverride=true, unicodeKeyboard=true, platformName=Android, resetKeyboard=true}]
+Session ID: 2c5a13ca-dc6b-43de-82c9-2eb1b718ee08
+*** Element info: {Using=id, value=android:id/button2}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.xiaolanyun.appium.DataTest.utils.AppiumUtil.findElement(AppiumUtil.java:92)
+	at com.xiaolanyun.appium.DataTest.utils.AppiumUtil.doesElementsExist(AppiumUtil.java:435)
+	at com.xiaolanyun.appium.DataTest.pagesHelper.InitPageHelper.clickIfButtonExist(InitPageHelper.java:29)
+	at com.xiaolanyun.appium.DataTest.pagesHelper.InitPageHelper.handleInit(InitPageHelper.java:46)
+	at com.xiaolanyun.appium.DataTest.testCase.search.SearchPage_001_SearchDemo_Test.searchDemo(SearchPage_001_SearchDemo_Test.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchDemo -->
+        <test-method status="PASS" signature="clenTest()[pri:0, instance:com.xiaolanyun.appium.DataTest.testCase.search.SearchPage_001_SearchDemo_Test@cb644e]" name="clenTest" is-config="true" duration-ms="1618" started-at="2018-03-25T10:33:45Z" finished-at="2018-03-25T10:33:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clenTest -->
+      </class> <!-- com.xiaolanyun.appium.DataTest.testCase.search.SearchPage_001_SearchDemo_Test -->
+    </test> <!-- 搜索 -->
+  </suite> <!-- appium实战-Android篇 -->
+</testng-results>
