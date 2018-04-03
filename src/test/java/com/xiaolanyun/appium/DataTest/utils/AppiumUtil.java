@@ -545,5 +545,17 @@ public class AppiumUtil {
 		String js="window.scrollTo("+x+","+y+");";
 		((JavascriptExecutor)driver).executeScript(js);
 	}
+	
+	/*
+	 * 页面等待
+	 */
+	public void Wait(int sleepTime) {
+		try {
+			Thread.sleep(sleepTime);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 }
 

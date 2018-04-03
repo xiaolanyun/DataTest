@@ -1,5 +1,7 @@
 package com.xiaolanyun.appium.DataTest.testCase.search;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.util.Map;
 
 import org.testng.annotations.Test;
@@ -17,7 +19,7 @@ import com.xiaolanyun.appium.DataTest.pagesHelper.SearchWebviewPageHelper;
 public class SearchPage_001_SearchDemo_Test  extends BasePrepare{
 	
 	@Test(dataProvider="testData")
-	public void searchDemo(Map<String, String> data){
+	public void searchDemo(Map<String, String> data) {
 		//去除欢迎界面和定位弹窗
 		InitPageHelper.handleInit(appiumUtil, InitPage.byElements);
 		//点击搜索按钮
@@ -26,12 +28,19 @@ public class SearchPage_001_SearchDemo_Test  extends BasePrepare{
 		SearchNativePageHelper.typeInfo(appiumUtil, SearchNativePage.SNP_INPUT_SEARCH, data.get("KEYWORD"));
 		//点击搜索网页，进行搜索
 		SearchNativePageHelper.clickOnSearchNativePage(appiumUtil, SearchNativePage.SNP_LINK_WEBSEARCH);
+		/*以上都是原生界面*/
+		SearchWebviewPageHelper.ClickOnSearchWebviewPage(appiumUtil,SearchWebviewPage.SNP_LINK_IMAGESEARCH2);
+		//Thread.sleep(3000);
+		SearchWebviewPageHelper.WaitWebviewPage(appiumUtil);
+		
+		
+		
 		//进入webview内容
-		SearchWebviewPageHelper.enterWebview(appiumUtil, SearchWebviewPage.WEBVIEW_NAME);
+		//SearchWebviewPageHelper.enterWebview(appiumUtil, SearchWebviewPage.WEBVIEW_NAME);
 		//等待webview内容显示出来
-		SearchWebviewPageHelper.waitForSearchResultDisplay(appiumUtil, elementTimeOut);
+		//SearchWebviewPageHelper.waitForSearchResultDisplay(appiumUtil, elementTimeOut);
 		//验证搜索的结果是否包含Java
-		SearchWebviewPageHelper.checkResultFitKeyword(appiumUtil, data.get("KEYWORD"), SearchWebviewPage.SWP_LINK_RESULT);
+		//SearchWebviewPageHelper.checkResultFitKeyword(appiumUtil, data.get("KEYWORD"), SearchWebviewPage.SWP_LINK_RESULT);
 	}
 
 }

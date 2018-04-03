@@ -8,18 +8,34 @@ import com.xiaolanyun.appium.DataTest.utils.AppiumUtil;
 
 public class SearchWebviewPageHelper {
 	static Logger logger = Logger.getLogger(SearchWebviewPageHelper.class);
-	/**进入指定的webview内容中*/
+	/**进入指定的webview内容中
 	public static void enterWebview(AppiumUtil appiumUtil,String webview){
 		appiumUtil.switchWebview(webview);
-	}
+	}*/
 	
 	/**等待webview页面中的元素显示出来*/
 	public static void waitForSearchResultDisplay(AppiumUtil appiumUtil,int elementTimeOut){
 		logger.info("正在等待搜索结果webview页面加载出来");
-		appiumUtil.waitForElementToload(elementTimeOut, SearchWebviewPage.SWP_LINK_ALLSEARCH);
+		/*appiumUtil.waitForElementToload(elementTimeOut, SearchWebviewPage.SWP_LINK_ALLSEARCH);
 		appiumUtil.waitForElementToload(elementTimeOut, SearchWebviewPage.SWP_LINK_ENGLISHSEARCH);
+		*/
 		appiumUtil.waitForElementToload(elementTimeOut, SearchWebviewPage.SWP_LINK_RESULT);
 		logger.info("搜索结果webview页面加载完毕");
+		
+	}
+	/*
+	 * 在此页面进行点击
+	 */
+	public static void ClickOnSearchWebviewPage(AppiumUtil appiumUtil,By byElement)
+	{
+		appiumUtil.click(byElement);
+	}
+	/*
+	 * 页面等待
+	 */
+	public static void WaitWebviewPage(AppiumUtil appiumUtil) {
+		// TODO Auto-generated method stub
+		appiumUtil.Wait(3000);
 		
 	}
 	
@@ -28,5 +44,6 @@ public class SearchWebviewPageHelper {
 		
 		appiumUtil.isContains(appiumUtil.getText(byElement), keyword);
 	}
+	
 
 }

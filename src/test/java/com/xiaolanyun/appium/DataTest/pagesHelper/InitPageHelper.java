@@ -41,9 +41,9 @@ public class InitPageHelper {
 	 * */
 	public static void handleInit(AppiumUtil appiumUtil, By byElement[]){
 		//第一个处理定位服务
-		clickIfButtonExist(appiumUtil, byElement[1]);
-		//第二个处理欢迎界面
 		clickIfButtonExist(appiumUtil, byElement[0]);
+		//第二个处理欢迎界面
+		clickIfButtonExist(appiumUtil, byElement[1]);
 		
 		
 	}

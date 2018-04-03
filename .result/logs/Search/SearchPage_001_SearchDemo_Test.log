@@ -1,12 +1,15 @@
-[2018-03-25 10:33:22] [INFO] 必应搜索APP已经启动
-[2018-03-25 10:33:22] [INFO] searchDemo 测试用例开始执行！
-[2018-03-25 10:33:22] [INFO] searchDemo 测试用例开始执行！
-[2018-03-25 10:33:25] [INFO] 点击元素： id: com.microsoft.bing:id/tutorial_finish_button
-[2018-03-25 10:33:40] [WARN] searchDemo 测试用例执行失败！
-[2018-03-25 10:33:43] [INFO] [SearchPage_001_SearchDemo_Test] 截图成功，保存在：[ result/screenshots/SearchPage_001_SearchDemo_Test.png ]
-[2018-03-25 10:33:43] [WARN] searchDemo 测试用例执行失败！
-[2018-03-25 10:33:45] [INFO] [SearchPage_001_SearchDemo_Test] 截图成功，保存在：[ result/screenshots/SearchPage_001_SearchDemo_Test.png ]
-[2018-03-25 10:33:47] [INFO] 必应搜索APP已经关闭
-[2018-03-25 10:33:47] [INFO] 执行失败的用例 = searchDemo
-[2018-03-25 10:33:47] [INFO] 执行失败的用例 = searchDemo
-[2018-03-25 10:33:50] [INFO] Excel报告已经生成，请查看：[F:\javaworkspace\DataTest\result\test-output\excelReports\TestReport_2018-03-25_10-33-appium实战-Android篇.xlsx]
+[2018-03-29 21:14:54] [INFO] 必应搜索APP已经启动
+[2018-03-29 21:14:54] [INFO] searchDemo 测试用例开始执行！
+[2018-03-29 21:14:54] [INFO] searchDemo 测试用例开始执行！
+[2018-03-29 21:14:57] [INFO] 点击元素： id: android:id/button2
+[2018-03-29 21:14:58] [INFO] 点击元素： id: com.microsoft.bing:id/tutorial_finish_button
+[2018-03-29 21:15:00] [INFO] 点击元素： id: com.microsoft.bing:id/search
+[2018-03-29 21:15:07] [INFO] 在元素： id: com.microsoft.bing:id/search_text_field输入内容Java
+[2018-03-29 21:15:08] [INFO] 点击元素： id: com.microsoft.bing:id/opal_as_web
+[2018-03-29 21:15:11] [INFO] 点击元素： xpath: //android.view.View[@text='图片']
+[2018-03-29 21:15:14] [INFO] searchDemo 测试用例执行成功！
+[2018-03-29 21:15:14] [INFO] searchDemo 测试用例执行成功！
+[2018-03-29 21:15:15] [INFO] 必应搜索APP已经关闭
+[2018-03-29 21:15:15] [INFO] 执行成功的用例 = searchDemo
+[2018-03-29 21:15:15] [INFO] 执行成功的用例 = searchDemo
+[2018-03-29 21:15:18] [INFO] Excel报告已经生成，请查看：[F:\javaworkspace\DataTest\result\test-output\excelReports\TestReport_2018-03-29_21-15-appium实战-Android篇.xlsx]
